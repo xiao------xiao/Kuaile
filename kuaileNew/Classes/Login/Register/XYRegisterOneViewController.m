@@ -1,0 +1,217 @@
+//
+//  XYRegisterOneViewController.m
+//  kuaile
+//
+//  Created by 肖兰月 on 2017/3/7.
+//  Copyright © 2017年 ttouch. All rights reserved.
+//
+
+#import "XYRegisterOneViewController.h"
+#import "XYShowCallView.h"
+#import "XYRegisterTwoViewController.h"
+#import "ICERegisterViewController.h"
+#import "XYFinishRegisterViewController.h"
+
+@interface XYRegisterOneViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *phone;
+@property (weak, nonatomic) IBOutlet UIButton *agreeBtn;
+@property (weak, nonatomic) IBOutlet UIButton *dealBtn;
+@property (weak, nonatomic) IBOutlet UIButton *nextBtn;
+@property (weak, nonatomic) IBOutlet UIButton *connenctBtn;
+@property (nonatomic, strong) dispatch_source_t timer;
+
+@end
+
+@implementation XYRegisterOneViewController
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"注册";
+ 
+    [self configTextField];
+    [self configBtns];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if(_timer){
+      dispatch_source_cancel(_timer);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //设置界面的按钮显示 根据自己需求设置
+            
+            self.btnSmsCode.enabled = YES;
+            [self.btnSmsCode setTitle:@"获取验证码" forState:UIControlStateNormal];
+            
+        });
+    }
+   
+}
+- (void)configTextField {
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(0, 0, 50, 44);
+    label.text = @"+86";
+    label.textColor = TZColorRGB(90);
+    label.font = [UIFont systemFontOfSize:15];
+    label.textAlignment = NSTextAlignmentCenter;
+    self.phone.leftView = label;
+    self.phone.leftViewMode = UITextFieldViewModeAlways;
+    self.phone.layer.cornerRadius = 4;
+    self.phone.clipsToBounds = YES;
+    
+    [[self.phone.rac_textSignal filter:^BOOL(NSString *value) {
+        return value.length >= 11;
+    }] subscribeNext:^(NSString *text) {
+        self.phone.text = [text substringToIndex:11];
+    }];
+}
+
+- (void)configBtns {
+    
+    self.btnSmsCode.layer.cornerRadius = TZCornerRadios_5;
+    self.btnSmsCode.layer.masksToBounds = YES;
+    [self.btnSmsCode.titleLabel setFont:xfont(11)];
+    [self.btnSmsCode setBackgroundColor:color_main forState:UIControlStateNormal];
+    [self.btnSmsCode setBackgroundColor:color_main_disabled forState:UIControlStateDisabled];
+    RAC(self.btnSmsCode,enabled) = [RACSignal combineLatest:@[self.phone.rac_textSignal] reduce:^id(NSString *phone){
+        if ([CommonTools isMobileNumber:phone]) {
+            
+            return @YES;
+        } else {
+            if (phone.length > 11) {
+                [CommonTools popTipShowHint:@"您输入的手机号码格式不正确" atView:self.phone inView:self.view];
+            }
+            
+            return @NO;
+        }
+    }];
+    [self.nextBtn setBackgroundColor:TZMainColor];
+    self.nextBtn.titleLabel.font = fontBig;
+    self.nextBtn.layer.cornerRadius = TZCornerRadios_7;
+    self.nextBtn.layer.masksToBounds = YES;
+    [self.nextBtn setBackgroundColor:color_main forState:UIControlStateNormal];
+    [self.nextBtn setBackgroundColor:color_main_disabled forState:UIControlStateDisabled];
+    self.btnSmsCode.enabled = NO;
+    self.nextBtn.enabled = NO;
+     RAC(self.nextBtn, enabled) = [RACSignal combineLatest:@[self.phone.rac_textSignal,self.codeTextfeild.rac_textSignal] reduce:^id(NSString *phone,NSString *code){
+        if ([CommonTools isMobileNumber:phone]&&code.length==4) {
+        
+
+
+            return @YES;
+        } else {
+            if (phone.length != 11) {
+//                [CommonTools popTipShowHint:@"您输入的手机号码格式不正确" atView:self.phone inView:self.view];
+            }
+            if (code.length!=4) {
+//                [CommonTools popTipShowHint:@"验证码输入不正确" atView:self.codeTextfeild inView:self.view];
+            }
+            
+            
+            return @NO;
+        }
+    }];
+//     self.agreeBtn.selected = YES;
+//    RAC(self.nextBtn, userInteractionEnabled) = [RACSignal combineLatest:@[self.phone.rac_textSignal,RACObserve(self.agreeBtn, selected)] reduce:^id(NSString *phone,NSNumber *select){
+//        if ([CommonTools isMobileNumber:phone] && [select boolValue]) {
+////            [self.nextBtn setBackgroundImage:[UIImage imageNamed:@"Background"] forState:0];
+//            self.nextBtn.backgroundColor = TZColor(6, 191, 252);
+//            [self.nextBtn setTitleColor:[UIColor whiteColor] forState:0];
+//            return @YES;
+//        } else {
+//            if (phone.length > 11) {
+//                [CommonTools popTipShowHint:@"您输入的手机号码格式不正确" atView:self.phone inView:self.view];
+//            }
+//
+//
+//            [self.nextBtn setTitleColor:TZGreyText150Color forState:0];
+////            [self.nextBtn setBackgroundImage:nil forState:0];
+//            self.nextBtn.backgroundColor = TZColorRGB(238);
+//            return @NO;
+//        }
+//    }];
+}
+
+- (IBAction)dealBtnClick:(id)sender {
+    [self pushWebVcWithFilename:@"im.html" title:@"使用条款和隐私政策"];
+}
+
+- (IBAction)nextBtnClick:(id)sender {
+    [TZHttpTool postWithURL:ApiIsRegistered params:@{@"phone":self.phone.text} success:^(NSDictionary *result) {
+        NSInteger status = [result[@"data"][@"is_register"] integerValue];
+        NSString *avater = result[@"data"][@"user"][@"avatar"];
+        //判断登录状态
+        if (status == 1) { //改号码已经注册过了
+            XYRegisterTwoViewController *two = [[XYRegisterTwoViewController alloc] init];
+            [self.navigationController pushViewController:two animated:YES];
+        } else {
+            ICERegisterViewController *iceRegiaterVc = [[ICERegisterViewController alloc] init];
+            iceRegiaterVc.phone = self.phone.text;
+            if(self.codeTextfeild.text.length!=4){
+                [self showInfo:@"请输入正确的验证码"];
+                return ;
+            }
+            iceRegiaterVc.code = self.codeTextfeild.text;
+            [self.navigationController pushViewController:iceRegiaterVc animated:YES];
+        }
+    } failure:^(NSString *msg) {
+        
+    }];
+}
+
+- (IBAction)agreeBtnClick:(UIButton *)sender {
+    sender.selected = !sender.isSelected;
+}
+
+- (IBAction)connectBtnCLick:(id)sender {
+    self.callView.hidden = NO;
+}
+
+
+
+- (IBAction)btnSmsCodeClicked:(id)sender {
+    [self enableSmsCode];
+    
+    [[ICEImporter smsWithPhone:self.phone.text type:@"1"] subscribeNext:^(NSDictionary *result) {
+        self.btnSmsCode.enabled = YES;
+        DLog(@"获取验证码 %@ %@", result, result[@"data"]);
+//        self.sessionID = result[@"sessionid"];
+        [self showPopTipView:@"验证码已发送!" showInView:self.btnSmsCode];
+    }];
+}
+- (void)enableSmsCode {
+    [self.view endEditing:YES];
+    self.btnSmsCode.enabled = NO;
+    [self.btnSmsCode setTitle:@"60秒" forState:UIControlStateNormal];
+    
+    __block NSInteger timeout = 60; //倒计时时间
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,queue);
+    
+    
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0); //每秒执行
+    dispatch_source_set_event_handler(_timer, ^{
+        if(timeout <= 0){ //倒计时结束，关闭
+            dispatch_source_cancel(_timer);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //设置界面的按钮显示 根据自己需求设置
+                
+                self.btnSmsCode.enabled = YES;
+                [self.btnSmsCode setTitle:@"获取验证码" forState:UIControlStateNormal];
+                
+            });
+        } else {
+            //            NSInteger minutes = timeout / 60;
+            NSInteger seconds = timeout % 60;
+            //            NSString *strTime = [NSString stringWithFormat:@"%d分%.2d秒后重新获取验证码",minutes, seconds];
+            NSString *strTime = [NSString stringWithFormat:@"%.2ld秒", (long)seconds];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //设置界面的按钮显示 根据自己需求设置
+                self.btnSmsCode.enabled = NO;
+                [self.btnSmsCode setTitle:strTime forState:UIControlStateNormal];
+            });
+            timeout--;
+        }
+    });
+    dispatch_resume(_timer);
+}
+@end

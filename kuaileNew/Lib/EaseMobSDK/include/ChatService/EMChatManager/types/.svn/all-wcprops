@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types
+END
+EMTextMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMTextMessageBody.h
+END
+EMChatLocation.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMChatLocation.h
+END
+EMConversation.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMConversation.h
+END
+IEMChatCryptor.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/IEMChatCryptor.h
+END
+EMPageResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMPageResult.h
+END
+EMChatCommand.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMChatCommand.h
+END
+EMChatFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMChatFile.h
+END
+EMRobot.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMRobot.h
+END
+IEMChatFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/IEMChatFile.h
+END
+EMVideoMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMVideoMessageBody.h
+END
+EMReceipt.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMReceipt.h
+END
+EMLocationMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMLocationMessageBody.h
+END
+EMCommandMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMCommandMessageBody.h
+END
+EMPushNotificationOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMPushNotificationOptions.h
+END
+EMBuddy.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMBuddy.h
+END
+IEMChatProgressDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/IEMChatProgressDelegate.h
+END
+EMGroupStyleSetting.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMGroupStyleSetting.h
+END
+IEMFileMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/IEMFileMessageBody.h
+END
+IEMMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/IEMMessageBody.h
+END
+EMChatroom.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMChatroom.h
+END
+EMCursorResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMCursorResult.h
+END
+IEMChatObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/IEMChatObject.h
+END
+EMChatImage.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMChatImage.h
+END
+EMMessage.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMMessage.h
+END
+EMChatText.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMChatText.h
+END
+IChatImageOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/IChatImageOptions.h
+END
+EMReceiptBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMReceiptBase.h
+END
+EMVoiceMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMVoiceMessageBody.h
+END
+EMGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMGroup.h
+END
+EMFileMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMFileMessageBody.h
+END
+EMImageMessageBody.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMImageMessageBody.h
+END
+EMChatVoice.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMChatVoice.h
+END
+EMChatVideo.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/types/EMChatVideo.h
+END

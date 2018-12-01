@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1op-F1-bPL" customClass="TZStoreNaviBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vx5-yz-YPz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69I-wc-hwi" userLabel="颜色View">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-u2-IFJ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrk-6o-msC">
+                            <rect key="frame" x="10" y="26" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="WeW-EV-Wn6"/>
+                                <constraint firstAttribute="height" constant="32" id="zf5-eF-1jZ"/>
+                            </constraints>
+                            <state key="normal" image="navi_back"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的佣金" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6en-1C-P8C">
+                            <rect key="frame" x="42" y="17" width="236" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="jIl-Sg-Cwe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhZ-XP-FF5">
+                            <rect key="frame" x="278" y="26" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dhZ-XP-FF5" secondAttribute="height" multiplier="1:1" id="78s-LH-GRt"/>
+                                <constraint firstAttribute="width" constant="32" id="rVF-lj-TkG"/>
+                            </constraints>
+                            <state key="normal" image="diandian"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="6en-1C-P8C" firstAttribute="centerX" secondItem="69I-wc-hwi" secondAttribute="centerX" id="360-BT-vdA"/>
+                        <constraint firstAttribute="trailing" secondItem="69I-wc-hwi" secondAttribute="trailing" id="6ds-Os-waH"/>
+                        <constraint firstItem="QJa-u2-IFJ" firstAttribute="top" secondItem="Vx5-yz-YPz" secondAttribute="top" id="APy-gy-ZEe"/>
+                        <constraint firstItem="dhZ-XP-FF5" firstAttribute="centerY" secondItem="mrk-6o-msC" secondAttribute="centerY" id="E5P-4U-H6U"/>
+                        <constraint firstAttribute="bottom" secondItem="QJa-u2-IFJ" secondAttribute="bottom" id="JgP-sE-gvo"/>
+                        <constraint firstAttribute="bottom" secondItem="69I-wc-hwi" secondAttribute="bottom" id="O3G-wd-95y"/>
+                        <constraint firstItem="6en-1C-P8C" firstAttribute="centerY" secondItem="mrk-6o-msC" secondAttribute="centerY" id="SXK-F9-OW9"/>
+                        <constraint firstAttribute="trailing" secondItem="dhZ-XP-FF5" secondAttribute="trailing" constant="10" id="Wvt-Fe-6hK"/>
+                        <constraint firstAttribute="bottom" secondItem="mrk-6o-msC" secondAttribute="bottom" constant="6" id="XaW-lG-az4"/>
+                        <constraint firstItem="69I-wc-hwi" firstAttribute="top" secondItem="Vx5-yz-YPz" secondAttribute="top" id="dAF-bU-JTR"/>
+                        <constraint firstItem="mrk-6o-msC" firstAttribute="leading" secondItem="Vx5-yz-YPz" secondAttribute="leading" constant="10" id="dK4-Q9-mbi"/>
+                        <constraint firstItem="69I-wc-hwi" firstAttribute="leading" secondItem="Vx5-yz-YPz" secondAttribute="leading" id="dgn-bu-eA3"/>
+                        <constraint firstItem="QJa-u2-IFJ" firstAttribute="leading" secondItem="Vx5-yz-YPz" secondAttribute="leading" id="qLz-0j-2Qu"/>
+                        <constraint firstItem="6en-1C-P8C" firstAttribute="leading" secondItem="mrk-6o-msC" secondAttribute="trailing" id="vGY-Xg-DwE"/>
+                        <constraint firstAttribute="trailing" secondItem="QJa-u2-IFJ" secondAttribute="trailing" id="z8c-kF-K4Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vx5-yz-YPz" firstAttribute="top" secondItem="1op-F1-bPL" secondAttribute="top" id="GWP-re-dh8"/>
+                <constraint firstAttribute="trailing" secondItem="Vx5-yz-YPz" secondAttribute="trailing" id="Go7-CL-iBY"/>
+                <constraint firstAttribute="bottom" secondItem="Vx5-yz-YPz" secondAttribute="bottom" id="MRr-FU-29U"/>
+                <constraint firstItem="Vx5-yz-YPz" firstAttribute="leading" secondItem="1op-F1-bPL" secondAttribute="leading" id="f5V-6G-oGq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="colorBgImageView" destination="QJa-u2-IFJ" id="WVt-eP-TSj"/>
+                <outlet property="colorBgView" destination="69I-wc-hwi" id="S1g-fz-hxH"/>
+                <outlet property="messageBtn" destination="mrk-6o-msC" id="gTA-QC-DbX"/>
+                <outlet property="moreBtn" destination="dhZ-XP-FF5" id="diR-gx-Cbb"/>
+                <outlet property="naviTitleLable" destination="6en-1C-P8C" id="MOT-AY-PKl"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="363"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="diandian" width="22" height="5"/>
+        <image name="navi_back" width="15" height="22"/>
+    </resources>
+</document>

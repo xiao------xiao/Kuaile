@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZYYSnsDetailController">
+            <connections>
+                <outlet property="commentTextView" destination="zKH-Dd-7Vi" id="mZq-d5-npn"/>
+                <outlet property="comtentView" destination="foe-2K-okC" id="MPW-cv-E6s"/>
+                <outlet property="keyBoardBtn" destination="8Nk-2z-8iA" id="oug-3v-ASB"/>
+                <outlet property="sendBtn" destination="hhh-TF-EdV" id="k4w-kx-jfV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foe-2K-okC" userLabel="工具条View">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKH-Dd-7Vi" customClass="HWEmotionTextView">
+                            <rect key="frame" x="12" y="5" width="307" height="40"/>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="wBK-Vh-7qo"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nk-2z-8iA">
+                            <rect key="frame" x="279" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="WgW-pn-YOb"/>
+                                <constraint firstAttribute="height" constant="40" id="fa3-Rs-cvG"/>
+                            </constraints>
+                            <state key="normal" image="compose_emoticonbutton_background"/>
+                            <state key="highlighted" image="compose_emoticonbutton_background_highlighted"/>
+                            <connections>
+                                <action selector="emojiBtnClicked:" destination="-1" eventType="touchUpInside" id="oz4-9z-LNd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhh-TF-EdV">
+                            <rect key="frame" x="327" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="80G-BT-WBC"/>
+                                <constraint firstAttribute="height" constant="40" id="jIQ-CH-LJX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="发送">
+                                <color key="titleColor" red="0.23529411759999999" green="0.62745098040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendBtnClicked:" destination="-1" eventType="touchUpInside" id="dkb-kZ-Jbv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="8Nk-2z-8iA" firstAttribute="top" secondItem="zKH-Dd-7Vi" secondAttribute="top" id="7Zn-5a-aG5"/>
+                        <constraint firstItem="zKH-Dd-7Vi" firstAttribute="centerY" secondItem="foe-2K-okC" secondAttribute="centerY" id="H53-Qg-tae"/>
+                        <constraint firstItem="hhh-TF-EdV" firstAttribute="centerY" secondItem="zKH-Dd-7Vi" secondAttribute="centerY" id="Q4t-DV-HUL"/>
+                        <constraint firstItem="zKH-Dd-7Vi" firstAttribute="leading" secondItem="foe-2K-okC" secondAttribute="leading" constant="12" id="a0N-GK-3aA"/>
+                        <constraint firstAttribute="height" constant="50" id="eS3-Ev-Nen"/>
+                        <constraint firstItem="hhh-TF-EdV" firstAttribute="leading" secondItem="zKH-Dd-7Vi" secondAttribute="trailing" constant="8" id="fRK-iv-AQu"/>
+                        <constraint firstItem="8Nk-2z-8iA" firstAttribute="bottom" secondItem="zKH-Dd-7Vi" secondAttribute="bottom" id="g4s-SW-QFU"/>
+                        <constraint firstAttribute="trailing" secondItem="hhh-TF-EdV" secondAttribute="trailing" constant="8" id="gyw-I3-9du"/>
+                        <constraint firstItem="8Nk-2z-8iA" firstAttribute="trailing" secondItem="zKH-Dd-7Vi" secondAttribute="trailing" id="xOD-z9-hRU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="foe-2K-okC" secondAttribute="trailing" id="Skk-7C-HmY"/>
+                <constraint firstItem="foe-2K-okC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="avi-Wu-A9z"/>
+                <constraint firstAttribute="bottom" secondItem="foe-2K-okC" secondAttribute="bottom" id="cgL-7d-aeu"/>
+            </constraints>
+            <point key="canvasLocation" x="149" y="365"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="compose_emoticonbutton_background" width="24" height="24"/>
+        <image name="compose_emoticonbutton_background_highlighted" width="24" height="24"/>
+    </resources>
+</document>

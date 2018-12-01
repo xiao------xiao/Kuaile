@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HHK-oj-wOB" customClass="TZPopSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFi-eX-lrq">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="170"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7We-hB-LSK">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPo-IG-jsJ">
+                                    <rect key="frame" x="13" y="7" width="38" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="38" id="Uot-hR-f6B"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="取消">
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancle:" destination="HHK-oj-wOB" eventType="touchUpInside" id="HEc-Ja-2SC"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最高学历" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-VP-DiY">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="ri8-VP-DiY" firstAttribute="leading" secondItem="7We-hB-LSK" secondAttribute="leading" id="8xk-D4-rgM"/>
+                                <constraint firstAttribute="trailing" secondItem="ri8-VP-DiY" secondAttribute="trailing" id="9Oj-H1-7x9"/>
+                                <constraint firstItem="ri8-VP-DiY" firstAttribute="top" secondItem="7We-hB-LSK" secondAttribute="top" id="Dwh-Qy-kDr"/>
+                                <constraint firstAttribute="height" constant="44" id="Pcj-9L-NlV"/>
+                                <constraint firstAttribute="bottom" secondItem="ri8-VP-DiY" secondAttribute="bottom" id="qvH-TZ-Dgb"/>
+                                <constraint firstItem="fPo-IG-jsJ" firstAttribute="top" secondItem="7We-hB-LSK" secondAttribute="top" constant="7" id="wjV-XY-Bas"/>
+                                <constraint firstItem="fPo-IG-jsJ" firstAttribute="leading" secondItem="7We-hB-LSK" secondAttribute="leading" constant="13" id="xhU-ah-H3h"/>
+                                <constraint firstAttribute="bottom" secondItem="fPo-IG-jsJ" secondAttribute="bottom" constant="7" id="xqI-lW-Y7w"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Je4-W5-UbD">
+                            <rect key="frame" x="0.0" y="44" width="300" height="126"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Je4-W5-UbD" firstAttribute="leading" secondItem="hFi-eX-lrq" secondAttribute="leading" id="00g-EG-Ar5"/>
+                        <constraint firstAttribute="trailing" secondItem="Je4-W5-UbD" secondAttribute="trailing" id="A3g-1z-vuR"/>
+                        <constraint firstItem="Je4-W5-UbD" firstAttribute="top" secondItem="7We-hB-LSK" secondAttribute="bottom" id="GEb-0c-Bm8"/>
+                        <constraint firstItem="7We-hB-LSK" firstAttribute="leading" secondItem="hFi-eX-lrq" secondAttribute="leading" id="H75-Q6-JZe"/>
+                        <constraint firstItem="7We-hB-LSK" firstAttribute="top" secondItem="hFi-eX-lrq" secondAttribute="top" id="Vfg-1B-1mk"/>
+                        <constraint firstAttribute="bottom" secondItem="Je4-W5-UbD" secondAttribute="bottom" id="gFv-mM-iqI"/>
+                        <constraint firstAttribute="trailing" secondItem="7We-hB-LSK" secondAttribute="trailing" id="kCn-Dn-FJe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hFi-eX-lrq" secondAttribute="trailing" id="5aH-Fe-nd9"/>
+                <constraint firstItem="hFi-eX-lrq" firstAttribute="leading" secondItem="HHK-oj-wOB" secondAttribute="leading" id="B8h-wc-LFy"/>
+                <constraint firstItem="hFi-eX-lrq" firstAttribute="top" secondItem="HHK-oj-wOB" secondAttribute="top" id="ZlM-eK-4Ja"/>
+                <constraint firstAttribute="bottom" secondItem="hFi-eX-lrq" secondAttribute="bottom" id="ikA-kh-Dyd"/>
+                <constraint firstAttribute="centerX" secondItem="hFi-eX-lrq" secondAttribute="centerX" id="oiy-mr-w7z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labTitle" destination="ri8-VP-DiY" id="ynM-xF-O9z"/>
+                <outlet property="tableView" destination="Je4-W5-UbD" id="ry4-0h-Ih3"/>
+            </connections>
+            <point key="canvasLocation" x="1772" y="538"/>
+        </view>
+    </objects>
+</document>

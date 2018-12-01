@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ICEMoneyDetailViewController">
+            <connections>
+                <outlet property="tableView" destination="bve-Df-CnP" id="W4c-6g-CO5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLA-kq-6Cr">
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bve-Df-CnP">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="yhx-9L-s78"/>
+                                <outlet property="delegate" destination="-1" id="LwQ-SU-mje"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uj0-kw-d1d">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日期" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnp-xj-lfz">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.16078431369999999" green="0.75686274509999996" blue="0.96470588239999999" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUP-Lv-ex0">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.16078431369999999" green="0.75686274509999996" blue="0.96470588239999999" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="centerY" secondItem="Pnp-xj-lfz" secondAttribute="centerY" id="Bsl-xD-45W"/>
+                                <constraint firstAttribute="trailing" secondItem="QUP-Lv-ex0" secondAttribute="trailing" constant="16" id="MNP-gU-bzg"/>
+                                <constraint firstAttribute="centerY" secondItem="QUP-Lv-ex0" secondAttribute="centerY" id="Mqu-pX-ksQ"/>
+                                <constraint firstAttribute="height" constant="44" id="POm-wB-eSh"/>
+                                <constraint firstItem="Pnp-xj-lfz" firstAttribute="leading" secondItem="uj0-kw-d1d" secondAttribute="leading" constant="16" id="qCE-1X-xvJ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                    <color key="value" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="bve-Df-CnP" firstAttribute="top" secondItem="uj0-kw-d1d" secondAttribute="bottom" constant="-1" id="2vh-bq-Ix2"/>
+                        <constraint firstItem="uj0-kw-d1d" firstAttribute="top" secondItem="tLA-kq-6Cr" secondAttribute="top" constant="8" id="F3o-Se-hs4"/>
+                        <constraint firstItem="uj0-kw-d1d" firstAttribute="leading" secondItem="tLA-kq-6Cr" secondAttribute="leading" constant="8" id="P7x-Qd-1sG"/>
+                        <constraint firstAttribute="trailing" secondItem="bve-Df-CnP" secondAttribute="trailing" constant="8" id="Pyv-5x-1HZ"/>
+                        <constraint firstItem="bve-Df-CnP" firstAttribute="leading" secondItem="tLA-kq-6Cr" secondAttribute="leading" constant="8" id="cJT-WM-jsg"/>
+                        <constraint firstAttribute="trailing" secondItem="uj0-kw-d1d" secondAttribute="trailing" constant="8" id="eYc-CS-2gr"/>
+                        <constraint firstAttribute="bottom" secondItem="bve-Df-CnP" secondAttribute="bottom" constant="8" id="veA-PE-25U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tLA-kq-6Cr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="adV-HO-Vi2"/>
+                <constraint firstItem="tLA-kq-6Cr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jv2-8D-J7b"/>
+                <constraint firstAttribute="trailing" secondItem="tLA-kq-6Cr" secondAttribute="trailing" id="m6Y-24-KCV"/>
+                <constraint firstAttribute="bottom" secondItem="tLA-kq-6Cr" secondAttribute="bottom" id="qhv-PI-l1J"/>
+            </constraints>
+            <point key="canvasLocation" x="189" y="236"/>
+        </view>
+    </objects>
+</document>

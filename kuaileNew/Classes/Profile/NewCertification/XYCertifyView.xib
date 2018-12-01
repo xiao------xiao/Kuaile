@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XYCertifyView">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iub-tE-Qfv">
+                    <rect key="frame" x="5" y="2" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3fo-7i-JIN"/>
+                    </constraints>
+                    <state key="normal" title="人脸验证">
+                        <color key="titleColor" red="0.023529411764705882" green="0.74901960784313726" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="faceBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="u6A-tS-7ZK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2t-EE-S1W">
+                    <rect key="frame" x="174" y="2" width="80" height="40"/>
+                    <state key="normal" title="身份证验证">
+                        <color key="titleColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cardBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="jPV-9U-5zo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiC-1h-tDk">
+                    <rect key="frame" x="343" y="2" width="80" height="40"/>
+                    <state key="normal" title="等待审核">
+                        <color key="titleColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="waitBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ufh-rV-h3B"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huise-1" translatesAutoresizingMaskIntoConstraints="NO" id="EDo-mX-9aa">
+                    <rect key="frame" x="269.5" y="19.5" width="60" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EDo-mX-9aa" secondAttribute="height" multiplier="10:1" id="ErB-I4-QaN"/>
+                        <constraint firstAttribute="width" constant="60" id="svh-aw-BhF"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huise-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Ds-pr-Lzr">
+                    <rect key="frame" x="98" y="19" width="60" height="6"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="B2t-EE-S1W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0RM-ay-EmF"/>
+                <constraint firstItem="Iub-tE-Qfv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="28w-cM-ubq"/>
+                <constraint firstItem="B2t-EE-S1W" firstAttribute="width" secondItem="Iub-tE-Qfv" secondAttribute="width" id="5YO-eC-ZsG"/>
+                <constraint firstItem="EDo-mX-9aa" firstAttribute="width" secondItem="9Ds-pr-Lzr" secondAttribute="width" id="8FP-7d-LkB"/>
+                <constraint firstItem="JiC-1h-tDk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="A5P-G9-HzT"/>
+                <constraint firstItem="9Ds-pr-Lzr" firstAttribute="centerY" secondItem="Iub-tE-Qfv" secondAttribute="centerY" id="Fed-nw-ub6"/>
+                <constraint firstItem="9Ds-pr-Lzr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.6" id="HcA-C2-eeC"/>
+                <constraint firstItem="EDo-mX-9aa" firstAttribute="centerY" secondItem="Iub-tE-Qfv" secondAttribute="centerY" id="J1N-UE-7FK"/>
+                <constraint firstItem="B2t-EE-S1W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="R9M-g8-4a9"/>
+                <constraint firstItem="JiC-1h-tDk" firstAttribute="width" secondItem="Iub-tE-Qfv" secondAttribute="width" id="eHE-8m-atE"/>
+                <constraint firstItem="EDo-mX-9aa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.4" id="iOE-im-hQ6"/>
+                <constraint firstItem="EDo-mX-9aa" firstAttribute="height" secondItem="9Ds-pr-Lzr" secondAttribute="height" id="rL0-mc-bUZ"/>
+                <constraint firstItem="B2t-EE-S1W" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sdH-22-IKl"/>
+                <constraint firstItem="Iub-tE-Qfv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="tMc-r1-acn"/>
+                <constraint firstItem="Iub-tE-Qfv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="tcj-pi-IgP"/>
+                <constraint firstItem="JiC-1h-tDk" firstAttribute="centerY" secondItem="Iub-tE-Qfv" secondAttribute="centerY" id="yGU-1f-d37"/>
+                <constraint firstAttribute="trailing" secondItem="JiC-1h-tDk" secondAttribute="trailing" constant="5" id="zEV-dB-HRL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardBtn" destination="B2t-EE-S1W" id="yqm-Ak-Mgx"/>
+                <outlet property="faceBtn" destination="Iub-tE-Qfv" id="Atp-fO-HBk"/>
+                <outlet property="firstImgView" destination="9Ds-pr-Lzr" id="l1v-kw-U1y"/>
+                <outlet property="lastImgConstraintW" destination="svh-aw-BhF" id="llQ-0C-par"/>
+                <outlet property="lastImgView" destination="EDo-mX-9aa" id="gVI-TO-vk4"/>
+                <outlet property="waitBtn" destination="JiC-1h-tDk" id="Von-h6-beS"/>
+            </connections>
+            <point key="canvasLocation" x="-107" y="-119"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="huise-1" width="92" height="8"/>
+    </resources>
+</document>

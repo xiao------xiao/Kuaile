@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TZJobDescViewController">
+            <connections>
+                <outlet property="labPlaceholder" destination="B9m-6d-NiR" id="DZL-cZ-Gwk"/>
+                <outlet property="placeHolderText" destination="B9m-6d-NiR" id="KQd-W1-tPD"/>
+                <outlet property="textView" destination="Ksu-T4-nK4" id="Yuw-Qc-c2T"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQH-8r-vJD">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请描述您的工作（不超过500个字）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9m-6d-NiR">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Ksu-T4-nK4">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="B9m-6d-NiR" secondAttribute="trailing" constant="8" id="1on-fS-1Ee"/>
+                        <constraint firstItem="B9m-6d-NiR" firstAttribute="top" secondItem="BQH-8r-vJD" secondAttribute="top" constant="9" id="2i0-il-cRf"/>
+                        <constraint firstAttribute="bottom" secondItem="Ksu-T4-nK4" secondAttribute="bottom" id="4Ue-Je-RVa"/>
+                        <constraint firstItem="Ksu-T4-nK4" firstAttribute="leading" secondItem="BQH-8r-vJD" secondAttribute="leading" id="IRo-FR-Haa"/>
+                        <constraint firstItem="Ksu-T4-nK4" firstAttribute="top" secondItem="BQH-8r-vJD" secondAttribute="top" id="PCW-38-GpX"/>
+                        <constraint firstItem="B9m-6d-NiR" firstAttribute="leading" secondItem="BQH-8r-vJD" secondAttribute="leading" constant="5" id="ZXB-zv-AUe"/>
+                        <constraint firstAttribute="trailing" secondItem="Ksu-T4-nK4" secondAttribute="trailing" id="jzh-jk-Ia5"/>
+                        <constraint firstAttribute="height" constant="400" id="vmC-5i-cLN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BQH-8r-vJD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="ZGs-Qi-gnD"/>
+                <constraint firstItem="BQH-8r-vJD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="oNi-hY-Bvc"/>
+                <constraint firstAttribute="trailing" secondItem="BQH-8r-vJD" secondAttribute="trailing" constant="12" id="qlJ-Iq-gFc"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="490"/>
+        </view>
+    </objects>
+</document>

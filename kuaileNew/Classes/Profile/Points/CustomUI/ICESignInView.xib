@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ICESignInView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="564"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YO1-Yh-1Cz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUj-HX-5ht">
+                            <rect key="frame" x="8" y="8" width="304" height="46"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5R-vw-ooW">
+                                    <rect key="frame" x="8" y="8" width="288" height="30"/>
+                                    <color key="backgroundColor" red="0.16078431369999999" green="0.75686274509999996" blue="0.96470588239999999" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="j4J-BH-MnS"/>
+                                    </constraints>
+                                    <state key="normal" title="今日尚未签到，点击签到">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="l5R-vw-ooW" firstAttribute="top" secondItem="rUj-HX-5ht" secondAttribute="top" constant="8" id="IS5-ta-Hd4"/>
+                                <constraint firstItem="l5R-vw-ooW" firstAttribute="leading" secondItem="rUj-HX-5ht" secondAttribute="leading" constant="8" id="tiS-aU-SxI"/>
+                                <constraint firstAttribute="trailing" secondItem="l5R-vw-ooW" secondAttribute="trailing" constant="8" id="xzG-Sy-o0z"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rUj-HX-5ht" secondAttribute="trailing" constant="8" id="4Ff-nG-g4Z"/>
+                        <constraint firstAttribute="height" constant="62" id="BRK-ke-gMo"/>
+                        <constraint firstItem="rUj-HX-5ht" firstAttribute="leading" secondItem="YO1-Yh-1Cz" secondAttribute="leading" constant="8" id="HwR-D0-HpJ"/>
+                        <constraint firstItem="rUj-HX-5ht" firstAttribute="top" secondItem="YO1-Yh-1Cz" secondAttribute="top" constant="8" id="JGd-eV-vMJ"/>
+                        <constraint firstAttribute="bottom" secondItem="rUj-HX-5ht" secondAttribute="bottom" constant="8" id="Mo0-NP-b0H"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oW0-fo-n0G">
+                    <rect key="frame" x="0.0" y="97" width="320" height="467"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-Nh-MdB">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="aTH-Nh-MdB" firstAttribute="top" secondItem="oW0-fo-n0G" secondAttribute="top" id="d6M-CE-sai"/>
+                        <constraint firstItem="aTH-Nh-MdB" firstAttribute="leading" secondItem="oW0-fo-n0G" secondAttribute="leading" id="dOb-NZ-ruw"/>
+                        <constraint firstAttribute="trailing" secondItem="aTH-Nh-MdB" secondAttribute="trailing" id="eEO-BS-6Y7"/>
+                        <constraint firstAttribute="bottom" secondItem="aTH-Nh-MdB" secondAttribute="bottom" id="gs2-MM-NWb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMY-j3-I8V">
+                    <rect key="frame" x="0.0" y="62" width="320" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="近2个月签到纪录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-CJ-pyt">
+                            <rect key="frame" x="16" y="9" width="107" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.32549019610000002" green="0.3411764706" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="tZp-CJ-pyt" firstAttribute="leading" secondItem="hMY-j3-I8V" secondAttribute="leading" constant="16" id="6ON-xk-mqd"/>
+                        <constraint firstAttribute="height" constant="35" id="ZEG-1c-Ctb"/>
+                        <constraint firstItem="tZp-CJ-pyt" firstAttribute="centerY" secondItem="hMY-j3-I8V" secondAttribute="centerY" id="pa2-i0-enP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oW0-fo-n0G" secondAttribute="bottom" id="0yL-my-hD9"/>
+                <constraint firstItem="hMY-j3-I8V" firstAttribute="top" secondItem="YO1-Yh-1Cz" secondAttribute="bottom" id="9pV-pl-Kgd"/>
+                <constraint firstAttribute="trailing" secondItem="hMY-j3-I8V" secondAttribute="trailing" id="Ack-Me-V6V"/>
+                <constraint firstItem="YO1-Yh-1Cz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L99-nJ-ZDR"/>
+                <constraint firstAttribute="trailing" secondItem="oW0-fo-n0G" secondAttribute="trailing" id="YM2-Sy-6ca"/>
+                <constraint firstItem="hMY-j3-I8V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bkx-xZ-Bci"/>
+                <constraint firstItem="YO1-Yh-1Cz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fyV-Ga-YRh"/>
+                <constraint firstAttribute="trailing" secondItem="YO1-Yh-1Cz" secondAttribute="trailing" id="kze-c8-6BG"/>
+                <constraint firstItem="oW0-fo-n0G" firstAttribute="top" secondItem="hMY-j3-I8V" secondAttribute="bottom" id="lNv-Xh-7gw"/>
+                <constraint firstItem="oW0-fo-n0G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ugQ-IK-IGx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnSign" destination="l5R-vw-ooW" id="Sae-CA-BKS"/>
+                <outlet property="tableView" destination="aTH-Nh-MdB" id="pNF-7K-lGn"/>
+            </connections>
+            <point key="canvasLocation" x="201" y="308"/>
+        </view>
+    </objects>
+</document>

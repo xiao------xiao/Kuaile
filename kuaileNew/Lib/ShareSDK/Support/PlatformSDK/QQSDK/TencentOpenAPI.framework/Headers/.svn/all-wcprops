@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework/Headers
+END
+QQApiInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework/Headers/QQApiInterface.h
+END
+sdkdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework/Headers/sdkdef.h
+END
+TencentOAuth.h
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework/Headers/TencentOAuth.h
+END
+QQApiInterfaceObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework/Headers/QQApiInterfaceObject.h
+END

@@ -1,0 +1,73 @@
+//
+//  HWSearchBar.m
+//
+//  Created by apple on 14-10-8.
+//
+
+#import "HWSearchBar.h"
+#import "UIView+Extension.h"
+
+@interface HWSearchBar ()
+@end
+
+@implementation HWSearchBar
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.font = [UIFont systemFontOfSize:15];
+        self.tintColor = TZMainColor;
+        self.placeholder = self.placeholderText ? self.placeholderText : @"搜索";
+        self.background = [UIImage imageNamed:@"searchbar_textfield_background"];
+        self.borderStyle = UITextBorderStyleNone;
+        // 通过init来创建初始化绝大部分控件，控件都是没有尺寸
+        UIImageView *searchIcon = [[UIImageView alloc] init];
+        searchIcon.image = [UIImage imageNamed:@"searchbar_textfield_search_icon"];
+        searchIcon.width = 30;
+        searchIcon.height = 30;
+        searchIcon.contentMode = UIViewContentModeCenter;
+        searchIcon.alpha = 0.5;
+        
+        self.leftView = searchIcon;
+        self.leftViewMode = UITextFieldViewModeAlways;
+        self.returnKeyType = UIReturnKeySearch;
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.font = [UIFont systemFontOfSize:15];
+        self.placeholder = self.placeholderText ? self.placeholderText : @"搜索";
+        self.background = [UIImage imageNamed:@"searchbar_textfield_background"];
+        self.borderStyle = UITextBorderStyleNone;
+        // 通过init来创建初始化绝大部分控件，控件都是没有尺寸
+        UIImageView *searchIcon = [[UIImageView alloc] init];
+        searchIcon.image = [UIImage imageNamed:@"searchbar_textfield_search_icon"];
+        searchIcon.width = 30;
+        searchIcon.height = 30;
+        searchIcon.contentMode = UIViewContentModeCenter;
+        searchIcon.alpha = 0.5;
+        
+        self.leftView = searchIcon;
+        self.leftViewMode = UITextFieldViewModeAlways;
+        self.returnKeyType = UIReturnKeySearch;
+    }
+    return self;
+}
+
+
+- (void)setPlaceholderText:(NSString *)placeholderText {
+    _placeholderText = placeholderText;
+    self.placeholder = placeholderText;
+}
+
++ (instancetype)searchBar
+{
+    return [[self alloc] init];
+}
+
+
+@end

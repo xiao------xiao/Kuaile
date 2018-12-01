@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="KGk-i7-Jjw" customClass="XYCreateGroupHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quntouxiang" translatesAutoresizingMaskIntoConstraints="NO" id="1NJ-w0-LQ5">
+                        <rect key="frame" x="129" y="18" width="80" height="80"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Wif-Ee-mur"/>
+                            <constraint firstAttribute="width" secondItem="1NJ-w0-LQ5" secondAttribute="height" multiplier="1:1" id="ewv-Ij-Dfo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置群头像" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hX-HU-WnB">
+                        <rect key="frame" x="125.5" y="110" width="87" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Hkp-E1-s5d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未设置将使用默认头像" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNC-FL-W5K">
+                        <rect key="frame" x="102" y="136" width="133" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Gw8-xp-UyI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8hX-HU-WnB" firstAttribute="top" secondItem="1NJ-w0-LQ5" secondAttribute="bottom" constant="12" id="3dG-3h-gy7"/>
+                    <constraint firstItem="1NJ-w0-LQ5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5Ss-Sd-B8q"/>
+                    <constraint firstItem="1NJ-w0-LQ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="TJC-Dd-E8K"/>
+                    <constraint firstItem="rNC-FL-W5K" firstAttribute="top" secondItem="8hX-HU-WnB" secondAttribute="bottom" constant="5" id="UzF-to-hAh"/>
+                    <constraint firstItem="rNC-FL-W5K" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wDo-tr-u0n"/>
+                    <constraint firstItem="8hX-HU-WnB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="yNM-UY-0Dz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avaterView" destination="1NJ-w0-LQ5" id="8bO-Pl-aQT"/>
+            </connections>
+            <point key="canvasLocation" x="-85.5" y="78"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="quntouxiang" width="90" height="90"/>
+    </resources>
+</document>

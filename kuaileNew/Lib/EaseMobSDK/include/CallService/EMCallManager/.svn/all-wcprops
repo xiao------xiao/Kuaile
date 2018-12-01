@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/CallService/EMCallManager
+END
+ICallManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/CallService/EMCallManager/ICallManager.h
+END
+EMCallServiceDefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/CallService/EMCallManager/EMCallServiceDefs.h
+END
+EaseMob+CallService.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/CallService/EMCallManager/EaseMob+CallService.h
+END

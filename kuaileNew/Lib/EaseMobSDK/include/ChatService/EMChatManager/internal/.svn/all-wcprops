@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal
+END
+IChatManagerRobot.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerRobot.h
+END
+IChatManagerPushNotification.h
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerPushNotification.h
+END
+IChatManagerBuddy.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerBuddy.h
+END
+IChatManagerLogin.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerLogin.h
+END
+IChatManagerSettingOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerSettingOptions.h
+END
+IChatManagerBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerBase.h
+END
+IChatManagerConversation.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerConversation.h
+END
+IChatManagerEncryption.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerEncryption.h
+END
+IChatManagerChatroom.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerChatroom.h
+END
+IChatManagerGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerGroup.h
+END
+IChatManagerUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerUtil.h
+END
+IChatManagerChat.h
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Lib/EaseMobSDK/include/ChatService/EMChatManager/internal/IChatManagerChat.h
+END

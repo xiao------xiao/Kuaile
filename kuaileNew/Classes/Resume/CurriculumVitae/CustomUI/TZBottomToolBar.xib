@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZMx-kG-Bp1" customClass="TZBottomToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdQ-Ah-fE4" userLabel="容器View">
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXe-77-OXt">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="设置" image="resume_setting">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClick:" destination="ZMx-kG-Bp1" eventType="touchUpInside" id="b6T-bQ-dCc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx3-fM-yid">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="删除" image="resume_delete">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClick:" destination="ZMx-kG-Bp1" eventType="touchUpInside" id="ZfT-kL-1bc"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ovd-rq-cKn">
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="ENH-Db-pwB"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2T-gT-yvs">
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="ArR-6U-dhA"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-Az-ree">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="编辑" image="resume_edit">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClick:" destination="ZMx-kG-Bp1" eventType="touchUpInside" id="cEt-JD-cbm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cXe-77-OXt" secondAttribute="width" multiplier="3" id="0b2-mE-F6l"/>
+                        <constraint firstItem="O2T-gT-yvs" firstAttribute="top" secondItem="gdQ-Ah-fE4" secondAttribute="top" id="8HL-Lb-T4s"/>
+                        <constraint firstItem="6cw-Az-ree" firstAttribute="leading" secondItem="Ovd-rq-cKn" secondAttribute="trailing" id="8YF-VG-mEY"/>
+                        <constraint firstItem="cXe-77-OXt" firstAttribute="height" secondItem="6cw-Az-ree" secondAttribute="height" id="Ako-XR-ORI"/>
+                        <constraint firstItem="cXe-77-OXt" firstAttribute="top" secondItem="gdQ-Ah-fE4" secondAttribute="top" id="DLT-iW-Gxp"/>
+                        <constraint firstItem="6cw-Az-ree" firstAttribute="width" secondItem="jx3-fM-yid" secondAttribute="width" id="E4U-Wy-cV4"/>
+                        <constraint firstItem="6cw-Az-ree" firstAttribute="height" secondItem="jx3-fM-yid" secondAttribute="height" id="FD2-gx-gp0"/>
+                        <constraint firstItem="6cw-Az-ree" firstAttribute="leading" secondItem="cXe-77-OXt" secondAttribute="trailing" id="JUH-WD-irN"/>
+                        <constraint firstAttribute="bottom" secondItem="jx3-fM-yid" secondAttribute="bottom" id="Nn4-cZ-7bj"/>
+                        <constraint firstItem="cXe-77-OXt" firstAttribute="leading" secondItem="gdQ-Ah-fE4" secondAttribute="leading" id="Odm-a0-7fE"/>
+                        <constraint firstAttribute="bottom" secondItem="cXe-77-OXt" secondAttribute="bottom" id="QUa-A9-k41"/>
+                        <constraint firstItem="jx3-fM-yid" firstAttribute="top" secondItem="gdQ-Ah-fE4" secondAttribute="top" id="WTh-iB-VX1"/>
+                        <constraint firstItem="6cw-Az-ree" firstAttribute="top" secondItem="gdQ-Ah-fE4" secondAttribute="top" id="Wxa-mb-MTx"/>
+                        <constraint firstAttribute="bottom" secondItem="6cw-Az-ree" secondAttribute="bottom" id="XV3-E6-13i"/>
+                        <constraint firstItem="cXe-77-OXt" firstAttribute="width" secondItem="6cw-Az-ree" secondAttribute="width" id="bcg-ef-rP6"/>
+                        <constraint firstAttribute="bottom" secondItem="O2T-gT-yvs" secondAttribute="bottom" id="dRK-lN-ZoL"/>
+                        <constraint firstAttribute="trailing" secondItem="jx3-fM-yid" secondAttribute="trailing" id="eLs-iI-qtN"/>
+                        <constraint firstItem="jx3-fM-yid" firstAttribute="leading" secondItem="O2T-gT-yvs" secondAttribute="trailing" id="hM1-BI-ZEa"/>
+                        <constraint firstAttribute="bottom" secondItem="Ovd-rq-cKn" secondAttribute="bottom" id="pGM-ku-0P8"/>
+                        <constraint firstItem="Ovd-rq-cKn" firstAttribute="top" secondItem="gdQ-Ah-fE4" secondAttribute="top" id="vOw-H3-viN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gdQ-Ah-fE4" secondAttribute="trailing" id="AT8-UZ-PFe"/>
+                <constraint firstItem="gdQ-Ah-fE4" firstAttribute="leading" secondItem="ZMx-kG-Bp1" secondAttribute="leading" id="kV6-UB-c37"/>
+                <constraint firstAttribute="bottom" secondItem="gdQ-Ah-fE4" secondAttribute="bottom" id="nNh-yN-f5s"/>
+                <constraint firstItem="gdQ-Ah-fE4" firstAttribute="top" secondItem="ZMx-kG-Bp1" secondAttribute="top" id="tMl-OR-Jmm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBtn" destination="cXe-77-OXt" id="Cib-hE-ZpQ"/>
+                <outlet property="midBtn" destination="6cw-Az-ree" id="MdQ-3u-476"/>
+                <outlet property="rightBtn" destination="jx3-fM-yid" id="U30-rr-qvv"/>
+            </connections>
+            <point key="canvasLocation" x="632" y="511"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="resume_delete" width="16" height="16"/>
+        <image name="resume_edit" width="16" height="16"/>
+        <image name="resume_setting" width="16" height="16"/>
+    </resources>
+</document>

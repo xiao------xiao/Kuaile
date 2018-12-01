@@ -1,0 +1,203 @@
+//
+//  kuaile-Prefix.pch
+//  kuaile
+//
+//  Created by ttouch on 15/9/9.
+//  Copyright (c) 2015年 ttouch. All rights reserved.
+//
+
+#ifndef kuaile_kuaile_Prefix_pch
+#define kuaile_kuaile_Prefix_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// 环信
+
+//#import <HelpDesk/HelpDesk.h>
+//#import "HelpDeskUI.h"
+//
+//#import "SCLoginManager.h"
+//#import "SRRefreshView.h"
+//#import "UIView+FLExtension.h"
+//#import "IQKeyboardManager.h"
+
+// 一些分类
+#import "UIView+Layout.h"
+#import "UIBarButtonItem+Extension.h"
+#import "NSObject+Utils.h"
+#import "UIScrollView+Utils.h"
+#import "UIView+Utils.h"
+#import "NSDate+Extension.h"
+#import "UITableView+Utils.h"
+#import "UILabel+Utils.h"
+#import "UIControl+Utils.h"
+#import "CALayer+Utils.h"
+#import "UIWebView+Utils.h"
+#import "UIViewController+Utils.h"
+#import "UIScrollView+Utils.h"
+#import "UIView+Extension.h"
+#import "UIAlertView+TZAlertView.h"
+#import "UIImageView+HeadImage.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "NSAttributedString+Extension.h"
+#import "NSAttributedString+Utils.h"
+
+//----------------------------------------
+// 环信
+#import "ChatDemoUIDefine.h"
+#import "EMAlertView.h"
+#import "TTGlobalUICommon.h"
+#import "UIViewController+HUD.h"
+#import "UIViewController+DismissKeyboard.h"
+#import "EMBuddy.h"
+#import "EMConversation.h"
+#import "EaseMob.h"
+#import "TZEaseMobManager.h"
+
+//----------------------------------------
+// 公共宏
+#import "Public.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+// 一些主要控制器
+#import "TZNaviController.h"
+#import "TZBaseViewController.h"
+#import "TZTableViewController.h"
+#import "TZWebViewController.h"
+#import "TZSegmentTableViewController.h"
+#import "ICELoginViewController.h"
+
+// 其他管理类
+//#import "TZMapManager.h"     // 地图管理类
+#import "CommonTools.h"        // 公共工具类（常用方法）
+#import "TZUserManager.h"      // 用户模型管理类
+#import "TZHttpTool.h"         // 请求管理类
+#import "TZContactTool.h"      // 电话/复制信息类
+
+//#import "TZImagePickerManager.h"  // 图片选择类
+#import "TZLocationManager.h"     // 定位管理类
+#import "ZYLocationTools.h"
+//#import "TZShareManager.h"        // 分享管理类
+#import "TZCitisManager.h"
+#import "TZImagePickerTool.h"
+
+// 一些视图
+#import "TZPopInputView.h"
+#import "TZBaseCell.h"
+#import "TZBaseButton.h"
+#import "TZButtonsHeaderView.h"
+#import "TZButtonCell.h"
+#import "TZPopSelectView.h"
+#import "TZDatePickerView.h"
+#import "TZImageView.h"
+#import "TZLable.h"
+#import "TZStarsView.h"
+
+// 表情相关
+#import "HWConst.h"
+#import "HWStatusTextView.h"
+#import "NSString+Emoji.h"
+
+
+
+
+// 客服
+#define KNOTIFICATION_LOGINCHANGE @"loginStateChange"
+#define KNOTIFICATION_CHAT @"chat"
+#define KNOTIFICATION_SETTINGCHANGE @"settingChange"
+#define KNOTIFICATION_ADDMSG_TO_LIST @"addmsgtolist"
+#define CHATVIEWBACKGROUNDCOLOR [UIColor colorWithRed:0.936 green:0.932 blue:0.907 alpha:1]
+
+//商城默认配置
+#define kDefaultAppKey @"1125170601115169#kefuchannelapp35068"
+#define kDefaultCustomerName @"kefuchannelimid_012680"
+#define kDefaultTenantId  @"35068";
+#define kDefaultProjectId @"547027";
+
+//#define kDefaultCustomerName @"130121"
+//#define kDefaultAppKey @"culiukeji#99baoyou"
+//#define kDefaultCustomerName @"culiutest3"
+
+#define kAppKey @"CSEM_appkey"
+#define kCustomerName @"CSEM_name"
+#define kCustomerNickname @"CSEM_nickname"
+#define kCustomerTenantId @"CSEM_tenantId"
+#define kCustomerProjectId @"CSEM_projectId"
+
+//Ext keyWord
+#define kMesssageExtWeChat @"weichat"
+#define kMesssageExtWeChat_ctrlType @"ctrlType"
+#define kMesssageExtWeChat_ctrlType_enquiry @"enquiry"
+#define kMesssageExtWeChat_ctrlType_inviteEnquiry @"inviteEnquiry"
+#define kMesssageExtWeChat_ctrlType_transferToKfHint  @"TransferToKfHint"
+#define kMesssageExtWeChat_ctrlType_transferToKf_HasTransfer @"hasTransfer"
+#define kMesssageExtWeChat_ctrlArgs @"ctrlArgs"
+#define kMesssageExtWeChat_ctrlArgs_inviteId @"inviteId"
+#define kMesssageExtWeChat_ctrlArgs_serviceSessionId @"serviceSessionId"
+#define kMesssageExtWeChat_ctrlArgs_detail @"detail"
+#define kMesssageExtWeChat_ctrlArgs_summary @"summary"
+#define kMesssageExtWeChat_ctrlArgs_label @"label"
+
+
+/** 颜色 16进制 **/
+#define __kColorWithRGB(rgbValue)    [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define mUserDefaults        [NSUserDefaults standardUserDefaults]
+#define mNotificationCenter  [NSNotificationCenter defaultCenter]
+#define HWNotificationCenter [NSNotificationCenter defaultCenter]
+#define mClass(className)    [NSClassFromString(className) class]
+#define mNotificationCenter  [NSNotificationCenter defaultCenter]
+#define mScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define mScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define TZColor(r, g, b)      ([UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0])
+#define TZColorRGB(rgb)       ([UIColor colorWithRed:(rgb)/255.0 green:(rgb)/255.0 blue:(rgb)/255.0 alpha:1.0])
+#define TZCornerRadios_5     5.f
+#define TZCornerRadios_7     7.f
+
+
+#define TZControllerBgColor   (TZColorRGB(246))
+#define TZGrayBgColor         (TZColorRGB(240))
+#define TZDisabledColor       (TZColorRGB(168))
+#define TZMainTextColor       (TZColor(248, 137, 9))
+#define TZGreyText150Color       (TZColorRGB(150))
+#define TZGreyText74Color       (TZColorRGB(74))
+
+#define TZColor(r, g, b)      ([UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0])
+#define TZColorRGB(rgb)       (TZColor(rgb, rgb, rgb))
+#define TZColorRGBAlpha(rgb)  ([UIColor colorWithRed:(rgb)/255.0 green:(rgb)/255.0 blue:(rgb)/255.0 alpha:0.4])
+
+#ifdef DEBUG
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
+#define TZPlaceholderImage        ([UIImage imageNamed:@"placeHolder_1b1"])
+#define HJPlaceholderImage        ([UIImage imageNamed:@""])
+#define TZPlaceholderGoodsImage   ([UIImage imageNamed:@"placeHolder_1b1"])
+#define TZPlaceholderBgImage      ([UIImage imageNamed:@"LaunchImage"])
+#define TZPlaceholderAvaterImage  ([UIImage imageNamed:@"默认头像预览"])
+#define TZPlaceholderStoreImage   ([UIImage imageNamed:@"placeHolder_1b1"])
+#define TZPlaceholderImage4B3     ([UIImage imageNamed:@"placeHolder_4b3"])
+#define TZPlaceholderImage16B9    ([UIImage imageNamed:@"placeHolder_16b9"])
+#define TZPlaceholderImage32B9    ([UIImage imageNamed:@"placeHolder_32b9"])
+#define XYPlaceHolderBgImage      ([UIImage imageNamed:@"wdyj_bg"])
+
+#define TZImageUrlWithShortUrl(url) ([url hasPrefix:@"http"]) ? [NSURL URLWithString:url] : ([NSURL URLWithString:[NSString stringWithFormat:@"%@%@", ApiSystemImage,url]])
+#define TZImageUrlStringWithShortUrl(url) ([url hasPrefix:@"http"]) ? url : ([NSString stringWithFormat:@"%@%@",ApiSystemImage,url])
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define IOS8after  ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define iOS9after ([UIDevice currentDevice].systemVersion.floatValue >= 9.0f)
+#define iOS10after ([UIDevice currentDevice].systemVersion.floatValue >= 10.0f)
+
+
+#define AppID  @"1068849473"
+#define NotNullStr(x)   x?x:@""
+#endif
+
+#endif

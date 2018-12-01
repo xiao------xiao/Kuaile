@@ -1,0 +1,76 @@
+//
+//  PublicView.m
+//  kuaileNew
+//
+//  Created by admin on 2018/11/29.
+//  Copyright © 2018年 admin. All rights reserved.
+//
+
+#import "PublicView.h"
+
+@implementation PublicView
++(UIButton *)createButtonWithTitle:(NSString *)title bgColor:(UIColor *)bgColor textColor:(UIColor *)textColor textFont:(UIFont *)font cornerRadios:(CGFloat)radios{
+    UIButton *button = [[UIButton alloc] init];
+
+    button.backgroundColor = bgColor;
+    [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.textColor = textColor;
+    button.titleLabel.font = font;
+    button.layer.masksToBounds = YES;
+    button.layer.cornerRadius = radios;
+    return button;
+}
++(UIButton *)createPictureButtonWithNormalImage:(NSString *)imageName selectImage:(NSString *)selectImageName{
+    NSAssert(imageName&&imageName.length>0, @"imageName 不能为空");
+    UIButton *btnmen = [[UIButton alloc] init];
+    if (imageName) {
+        [btnmen setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    }
+   
+    if (selectImageName) {
+        [btnmen setImage:[UIImage imageNamed:selectImageName] forState:UIControlStateSelected];
+    }
+    return btnmen;
+    
+}
+
++(UIButton *)createLoginNormalButtonWithTitle:(NSString *)title{
+    
+    UIButton *button = [PublicView createButtonWithTitle:title bgColor:color_main textColor:color_white textFont:fontBig cornerRadios:TZCornerRadios_7];
+    [button setBackgroundColor:color_main_disabled forState:UIControlStateDisabled];
+    
+    return button;
+}
+
++(UITextField *)textfieldWithPlaceholder:(NSString *)holder font:(UIFont *)font textAlign:(NSTextAlignment)textAlign delegate:(id)delegate tag:(int)tag{
+    UITextField *textfield = [[UITextField alloc] init];
+    textfield.font = font;
+    if (delegate) {
+        textfield.delegate = delegate;
+    }
+    if(tag>0){
+        textfield.tag = tag;
+    }
+    textfield.borderStyle = UITextBorderStyleNone;
+    textfield.textAlignment = textAlign;
+    textfield.placeholder = holder;
+    return textfield;
+}
++(UITextField *)createTextfeildNormalWithPlaceHolder:(NSString *)holder delegate:(id)delegate tag:(int)tag{
+    return [PublicView textfieldWithPlaceholder:holder font:fontBig textAlign:NSTextAlignmentLeft delegate:delegate tag:tag];
+}
+
++(UILabel *)createLabelWithTitle:(NSString *)title titleColor:(UIColor *)titleColor font:(UIFont *)font textAlignment:(NSTextAlignment)align{
+    UILabel *lblone = [[UILabel alloc] init];
+    [lblone setTitle:title color:titleColor];
+    lblone.font = font;
+    lblone.textAlignment = align;
+    return lblone;
+}
+
++(UIImageView *)createImageViewWithImage:(NSString *)imageName{
+    UIImageView *camera = [[UIImageView alloc] init];
+    camera.image = [UIImage imageNamed:imageName];
+    return camera;
+}
+@end

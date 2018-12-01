@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool
+END
+HWConst.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWConst.m
+END
+UITextView+Extension.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/UITextView+Extension.m
+END
+NSAttributedString+Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/NSAttributedString+Utils.h
+END
+NSAttributedString+Utils.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/NSAttributedString+Utils.m
+END
+NSString+Emoji.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/NSString+Emoji.h
+END
+HWEmotionTool.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWEmotionTool.h
+END
+HWEmotion.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWEmotion.h
+END
+HWTextPart.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWTextPart.h
+END
+NSString+Emoji.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/NSString+Emoji.m
+END
+HWEmotionTool.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWEmotionTool.m
+END
+HWEmotion.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWEmotion.m
+END
+HWTextPart.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWTextPart.m
+END
+HWSpecial.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWSpecial.h
+END
+HWStatusTextView.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWStatusTextView.h
+END
+HWEmotionAttachment.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWEmotionAttachment.h
+END
+HWSpecial.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWSpecial.m
+END
+HWConst.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWConst.h
+END
+UITextView+Extension.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/UITextView+Extension.h
+END
+HWStatusTextView.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWStatusTextView.m
+END
+HWEmotionAttachment.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/HappyWork/!svn/ver/130/Ios/kuaileNew/kuaileNew/Common/HWTextTool/HWEmotionAttachment.m
+END

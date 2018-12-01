@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ICEProvisionViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnA-fw-5eB">
+                    <string key="text">开心工作是由无锡开心工作网络有限公司打造的中国一流的综合性求职服务网络平台以及手机应用，我们服务区域以长三角为中心辐射全国，是世界500强企业官方指定招聘平台。  
+开心工作提供优质的服务，将求职者与企业无缝对接；线下服务实现包括安排行程、车站接送、培训、面试、住宿、辅导、在职跟踪、转厂、调岗、维权等一站式全方位招聘服务。应聘者创建简历方便，推荐和系统提醒及时到位，同时为面向不同层次的求职者提供全方位的求职服务，提供专业、全面的职业培训、全职招聘、劳动咨询等信息。
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NnA-fw-5eB" secondAttribute="trailing" constant="16" id="CTV-RU-vkF"/>
+                <constraint firstItem="NnA-fw-5eB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="ToI-NP-XSq"/>
+                <constraint firstAttribute="bottom" secondItem="NnA-fw-5eB" secondAttribute="bottom" constant="16" id="Yng-Wo-6hH"/>
+                <constraint firstItem="NnA-fw-5eB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ye2-sz-Xcl"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Yng-Wo-6hH"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

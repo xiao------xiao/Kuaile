@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="248"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的老家，就住在这个屯啊，这个屯里都是土生土长的人啦，黑多黑多人。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2k2-Jc-kXn">
+                    <rect key="frame" x="15" y="196" width="301" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.67051380869999999" green="0.67063111070000003" blue="0.67050635810000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和谐又爱V锐顾得的大家族" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4r8-QW-1NE">
+                    <rect key="frame" x="69" y="156" width="192" height="20"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wdyj_bg" translatesAutoresizingMaskIntoConstraints="NO" id="TQL-MD-BYl">
+                    <rect key="frame" x="0.0" y="0.0" width="331" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="Y4B-r7-hZV"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001" translatesAutoresizingMaskIntoConstraints="NO" id="nuZ-vM-8OS">
+                    <rect key="frame" x="135" y="81" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Lu6-ac-BSM"/>
+                        <constraint firstAttribute="width" constant="60" id="zMQ-DZ-hxt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezf-4a-eec">
+                    <rect key="frame" x="279" y="107" width="37" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="PG8-k2-034"/>
+                    </constraints>
+                    <state key="normal" title="10km">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nuZ-vM-8OS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="02f-2y-BqM"/>
+                <constraint firstItem="nuZ-vM-8OS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="81" id="Aw4-cH-0wH"/>
+                <constraint firstAttribute="trailing" secondItem="2k2-Jc-kXn" secondAttribute="trailing" constant="15" id="BMv-cO-u0q"/>
+                <constraint firstItem="4r8-QW-1NE" firstAttribute="top" secondItem="nuZ-vM-8OS" secondAttribute="bottom" constant="15" id="Kqq-rv-zgP"/>
+                <constraint firstItem="4r8-QW-1NE" firstAttribute="centerX" secondItem="nuZ-vM-8OS" secondAttribute="centerX" id="MWG-VA-Q7F"/>
+                <constraint firstAttribute="trailing" secondItem="TQL-MD-BYl" secondAttribute="trailing" id="Rta-if-38i"/>
+                <constraint firstAttribute="trailing" secondItem="ezf-4a-eec" secondAttribute="trailing" constant="15" id="Sb9-aD-4s5"/>
+                <constraint firstItem="TQL-MD-BYl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Sw2-q4-lyP"/>
+                <constraint firstItem="2k2-Jc-kXn" firstAttribute="top" secondItem="4r8-QW-1NE" secondAttribute="bottom" constant="20" id="fEH-fh-nwl"/>
+                <constraint firstItem="TQL-MD-BYl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gix-Vz-9l6"/>
+                <constraint firstItem="2k2-Jc-kXn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="i8P-MK-Na8"/>
+                <constraint firstItem="2k2-Jc-kXn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lkG-wT-dNa"/>
+                <constraint firstItem="ezf-4a-eec" firstAttribute="bottom" secondItem="TQL-MD-BYl" secondAttribute="bottom" constant="-5" id="qfS-5M-y6q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backGroundImage" destination="TQL-MD-BYl" id="4GF-A2-P8o"/>
+                <outlet property="buton" destination="ezf-4a-eec" id="kT8-mt-Ysf"/>
+                <outlet property="headImage" destination="nuZ-vM-8OS" id="ldN-FM-q3f"/>
+                <outlet property="headLayout" destination="Aw4-cH-0wH" id="q3M-zv-siw"/>
+                <outlet property="titlContentLabel" destination="2k2-Jc-kXn" id="44N-ax-fJi"/>
+                <outlet property="titleLabel" destination="4r8-QW-1NE" id="sJt-WG-qKa"/>
+            </connections>
+            <point key="canvasLocation" x="-226.5" y="122"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="001" width="108" height="108"/>
+        <image name="wdyj_bg" width="375" height="375"/>
+    </resources>
+</document>
